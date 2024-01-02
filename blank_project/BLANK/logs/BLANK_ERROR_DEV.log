@@ -1,0 +1,30 @@
+[13:17:54 12/12/2023] ERROR (NHibernate.Cfg.Configuration) Could not add assembly ECO.RCF.DataAccess
+NHibernate.MappingException: Could not add assembly ECO.RCF.DataAccess ---> System.IO.FileNotFoundException: No se puede cargar el archivo o ensamblado 'ECO.RCF.DataAccess' ni una de sus dependencias. El sistema no puede encontrar el archivo especificado.
+   en System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   en System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   en System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   en System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   en System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   en System.Reflection.Assembly.Load(String assemblyString)
+   en NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+[14:05:57 12/12/2023] ERROR (NHibernate.AdoNet.AbstractBatcher) Could not execute query: select pk_tgp.sp_obtener_secuencia(:p0,:p1) from dual
+Oracle.DataAccess.Client.OracleException ORA-00904: "PK_TGP"."SP_OBTENER_SECUENCIA": invalid identifier    en Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck, Int32 isRecoverable)
+   en Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, String procedure, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, Boolean bCheck)
+   en Oracle.DataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   en Oracle.DataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.ExecuteReader()
+   en NHibernate.AdoNet.AbstractBatcher.ExecuteReader(DbCommand cmd)
+[14:05:57 12/12/2023] ERROR (NHibernate.Util.ADOExceptionReporter) ORA-00904: "PK_TGP"."SP_OBTENER_SECUENCIA": invalid identifier
+[14:05:57 12/12/2023] ERROR (NHibernate.Util.ADOExceptionReporter) ORA-00904: "PK_TGP"."SP_OBTENER_SECUENCIA": invalid identifier
+[14:05:57 12/12/2023] ERROR (NHibernate.Util.ADOExceptionReporter) ORA-00904: "PK_TGP"."SP_OBTENER_SECUENCIA": invalid identifier
+[14:05:57 12/12/2023] ERROR (Home) **********************************************************************************************************************************************************************************
+[14:05:57 12/12/2023] ERROR (Home) Excepcion: could not resolve property: TipoEntidad of: ECO.RCF.DataAccess.Mapping.Entidad - Controller: Home - Action: Index - Usuario: admin - Navegador: Chrome - Version: 120.0
+[14:05:57 12/12/2023] ERROR (Home) ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[14:05:57 12/12/2023] ERROR (Home) Pila de Ejecucion: 
+   en NHibernate.Persister.Entity.AbstractPropertyMapping.ToType(String propertyName)
+   en NHibernate.Persister.Entity.AbstractEntityPersister.ToType(String propertyName)
+   en NHibernate.Loader.Criteria.EntityCriteriaInfoProvider.GetType(String relativePath)
+   en NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetPathInfo(String path, ICriteriaInfoProvider rootProvider)
+   en NHibernate.Loader.Criteria.CriteriaQueryTranslator.CreateCriteriaEntityNameMap()
+[14:05:57 12/12/2023] ERROR (Home) **********************************************************************************************************************************************************************************

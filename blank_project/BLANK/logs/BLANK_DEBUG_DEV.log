@@ -1,0 +1,113 @@
+[13:20:02 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        this_.C_ID as c1_0_0_,
+        this_.D_NOMBRE as d2_0_0_,
+        this_.D_VALOR as d3_0_0_,
+        this_.D_DESCRIPCION as d4_0_0_,
+        this_.D_TIPO_DATO as d5_0_0_,
+        this_.D_FORMATO_TRANSF as d6_0_0_,
+        this_.C_USUARIO as c7_0_0_,
+        this_.FH_ALTA as fh8_0_0_,
+        this_.FHU_ACTUALIZ as fhu9_0_0_ 
+    FROM
+        RCF.TGP_PARAMETRO this_ 
+    WHERE
+        this_.D_NOMBRE = :p0 
+    ORDER BY
+        this_.C_ID desc;
+    :p0 = 'TOKEN_SSO' [Type: String (0:0:0)]
+[13:20:04 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        GLOBAL_NAME 
+    FROM
+        GLOBAL_NAME
+[13:20:04 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        this_.C_ID as c1_0_0_,
+        this_.D_NOMBRE as d2_0_0_,
+        this_.D_VALOR as d3_0_0_,
+        this_.D_DESCRIPCION as d4_0_0_,
+        this_.D_TIPO_DATO as d5_0_0_,
+        this_.D_FORMATO_TRANSF as d6_0_0_,
+        this_.C_USUARIO as c7_0_0_,
+        this_.FH_ALTA as fh8_0_0_,
+        this_.FHU_ACTUALIZ as fhu9_0_0_ 
+    FROM
+        RCF.TGP_PARAMETRO this_ 
+    WHERE
+        this_.D_NOMBRE = :p0 
+    ORDER BY
+        this_.C_ID desc;
+    :p0 = 'TOKEN_SSO' [Type: String (0:0:0)]
+[13:20:04 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        GLOBAL_NAME 
+    FROM
+        GLOBAL_NAME
+[14:03:29 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        this_.C_ID as c1_1_0_,
+        this_.D_NOMBRE as d2_1_0_,
+        this_.D_VALOR as d3_1_0_,
+        this_.D_DESCRIPCION as d4_1_0_,
+        this_.D_TIPO_DATO as d5_1_0_,
+        this_.D_FORMATO_TRANSF as d6_1_0_,
+        this_.C_USUARIO as c7_1_0_,
+        this_.FH_ALTA as fh8_1_0_,
+        this_.FHU_ACTUALIZ as fhu9_1_0_ 
+    FROM
+        RCF.TGP_PARAMETRO this_ 
+    WHERE
+        this_.D_NOMBRE = :p0 
+    ORDER BY
+        this_.C_ID desc;
+    :p0 = 'TOKEN_SSO' [Type: String (0:0:0)]
+[14:03:31 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        GLOBAL_NAME 
+    FROM
+        GLOBAL_NAME
+[14:05:57 12/12/2023] DEBUG (NHibernate.SQL) 
+    select
+        pk_tgp.sp_obtener_secuencia(:p0,
+        :p1) 
+    from
+        dual;
+    :p0 = 'CODIGO_ERROR' [Type: String (0:0:0)],
+    :p1 = NULL [Type: Int32 (0:0:0)]
+[14:07:13 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        this_.C_ID as c1_0_0_,
+        this_.N_VERSION_HIBERNATE as n2_0_0_,
+        this_.D_NOMBRE as d3_0_0_,
+        this_.D_APELLIDO as d4_0_0_,
+        this_.D_RAZON_SOCIAL as d5_0_0_,
+        this_.N_CUIT as n6_0_0_,
+        this_.N_DOCUMENTO as n7_0_0_,
+        this_.F_VIGENCIA_DESDE as f8_0_0_,
+        this_.F_VIGENCIA_HASTA as f9_0_0_,
+        this_.FH_ALTA as fh10_0_0_,
+        this_.C_USUARIO as c11_0_0_,
+        this_.FHU_ACTUALIZ as fhu12_0_0_,
+        this_.M_ORGANISMO as m13_0_0_,
+        this_.M_PERTENECE_AL_ESTADO as m14_0_0_ 
+    FROM
+        RCF.RCF_ENTIDAD this_
+[14:07:42 12/12/2023] DEBUG (NHibernate.SQL) 
+    SELECT
+        this_.C_ID as c1_0_0_,
+        this_.N_VERSION_HIBERNATE as n2_0_0_,
+        this_.D_NOMBRE as d3_0_0_,
+        this_.D_APELLIDO as d4_0_0_,
+        this_.D_RAZON_SOCIAL as d5_0_0_,
+        this_.N_CUIT as n6_0_0_,
+        this_.N_DOCUMENTO as n7_0_0_,
+        this_.F_VIGENCIA_DESDE as f8_0_0_,
+        this_.F_VIGENCIA_HASTA as f9_0_0_,
+        this_.FH_ALTA as fh10_0_0_,
+        this_.C_USUARIO as c11_0_0_,
+        this_.FHU_ACTUALIZ as fhu12_0_0_,
+        this_.M_ORGANISMO as m13_0_0_,
+        this_.M_PERTENECE_AL_ESTADO as m14_0_0_ 
+    FROM
+        RCF.RCF_ENTIDAD this_
